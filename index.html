@@ -13,8 +13,17 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
+    #div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: 200%;
+        align-items: center;
+        justify-content: center;
+    }
     
 
 </style>
@@ -23,7 +32,7 @@
 <body>
 
     <div id="div">
-        Hello
+        
     </div>
 
 </body>
@@ -32,9 +41,9 @@
 
     console.log(a);
 
-    var b = `Happy Birthday Dear ${a}`;
+    var b = `Happy Birthday Dear ${a}!!!!`;
 
-    document.getElementById("div").innerHTML = b;
+    document.getElementById("div").innerHTML = b + "🎂" + "🎉" + "🥳";
 
 </script>
 </html>
