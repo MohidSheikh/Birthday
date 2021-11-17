@@ -1,0 +1,52 @@
+body {
+    background-image: url(bg.gif);
+    background-repeat: no-repeat;
+    background-position: 40% -40%;
+    background-size: 600px 400px;
+}
+
+.bd {
+    font-size: 200%;
+    border: 1px solid;
+    width: 400px;
+    border-color: none;
+    height: 50px;
+    padding-top: 15px;
+    animation-name: trans;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes trans {
+    0% {background-color: red; color: blue;} 
+    25% {background-color: red; color: blue;}
+    50% {background-color: green; color: yellow;}
+    75% {background-color: yellow; color:green;}
+    100% {background-color: blue; color: red;}
+}
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        background-image: url(bg.gif);
+        background-repeat: no-repeat;
+        background-position: 40% -80%;
+        background-size: 300px 200px;
+    }
+    
+    .bd {
+        font-size: 120%;
+        border: 1px solid;
+        width: 260px;
+        border-color: none;
+        height: 25px;
+        padding-top: 10px;
+        animation-name: trans;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        
+    }
+
+
+}
